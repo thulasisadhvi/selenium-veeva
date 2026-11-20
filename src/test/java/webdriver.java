@@ -15,12 +15,10 @@ public class webdriver {
         driver.findElement(By.linkText("Login")).click();
         Thread.sleep(3000);
 
-        WebElement rollNo = driver.findElement(By.name("roll_no"));
-        rollNo.sendKeys("23A91A4414");
+        driver.findElement(By.name("roll_no")).sendKeys("23A91A4414");
         Thread.sleep(5000);
 
-        WebElement pass = driver.findElement(By.name("password"));
-        pass.sendKeys("Sadhvi@2006");
+        driver.findElement(By.name("password")).sendKeys("Sadhvi@2006");
 
         Thread.sleep(3000);
         driver.findElement(By.xpath("//button[normalize-space()='Sign in']")).click();
